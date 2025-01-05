@@ -1,0 +1,43 @@
+0 verbose cli /usr/bin/node-18 /usr/bin/npm
+1 info using npm@10.7.0
+2 info using node@v18.20.4
+3 silly config:load:file:/usr/lib/node_modules_18/npm/npmrc
+4 silly config:load:file:/usr/share/nginx/html/.npmrc
+5 silly config:load:file:/home/ec2-user/.npmrc
+6 silly config:load:file:/etc/npmrc
+7 verbose title npm init
+8 verbose argv "init" "--yes"
+9 verbose logfile logs-max:10 dir:/home/ec2-user/.npm/_logs/2025-01-05T08_44_54_912Z-
+10 verbose logfile /home/ec2-user/.npm/_logs/2025-01-05T08_44_54_912Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/npm 150ms
+13 notice
+13 notice New [31mmajor[39m version of npm available! [31m10.7.0[39m -> [34m11.0.0[39m
+13 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.0.0[39m
+13 notice To update run: [4mnpm install -g npm@11.0.0[24m
+13 notice  { force: true, [Symbol(proc-log.meta)]: true }
+14 verbose stack Error: EACCES: permission denied, open '/usr/share/nginx/html/package.json'
+15 verbose cwd /usr/share/nginx/html
+16 verbose Linux 6.1.119-129.201.amzn2023.x86_64
+17 verbose node v18.20.4
+18 verbose npm  v10.7.0
+19 error code EACCES
+20 error syscall open
+21 error path /usr/share/nginx/html/package.json
+22 error errno -13
+23 error [Error: EACCES: permission denied, open '/usr/share/nginx/html/package.json'] {
+23 error   errno: -13,
+23 error   code: 'EACCES',
+23 error   syscall: 'open',
+23 error   path: '/usr/share/nginx/html/package.json'
+23 error }
+24 error
+24 error The operation was rejected by your operating system.
+24 error It is likely you do not have the permissions to access this file as the current user
+24 error
+24 error If you believe this might be a permissions issue, please double-check the
+24 error permissions of the file and its containing directories, or try running
+24 error the command again as root/Administrator.
+25 verbose exit -13
+26 verbose code -13
+27 error A complete log of this run can be found in: /home/ec2-user/.npm/_logs/2025-01-05T08_44_54_912Z-debug-0.log
