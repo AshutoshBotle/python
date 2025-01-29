@@ -6,7 +6,7 @@ class TestApp(unittest.TestCase):
         tester = app.test_client()
         response = tester.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b"python app hosting is done using the pipelineeeeeeeeeeeeeeeeeeeeeeeeee")
+        self.assertEqual(response.data, b"python app hosting is done using the pipelineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
 
 
 if __name__ == "__main__":
