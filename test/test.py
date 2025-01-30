@@ -6,7 +6,7 @@ class TestApp(unittest.TestCase):
         tester = app.test_client()
         response = tester.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b"Deployed python app using the jenkins pipelineeeeee")
+        self.assertEqual(response.data, b"Deployed python app using the jenkins pipeline")
 
 
 if __name__ == "__main__":
